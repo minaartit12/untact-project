@@ -1,0 +1,24 @@
+DROP TABLE if EXISTS untacttrip;
+
+CREATE TABLE if not EXISTS untacttrip(
+   Email VARCHAR(100),
+	여행후기 VARCHAR(2000) NOT NULL,
+	imgpath VARCHAR(2000),
+	Name VARCHAR(50) NOT NULL,
+	Password VARCHAR(50) NOT NULL,
+	Phone VARCHAR(50) NOT NULL,
+	Address VARCHAR(50) NOT NULL,
+	Create_data datetime NULL DEFAULT current_timestamp
+);
+
+COMMIT;
+INSERT INTO untacttrip VALUES(
+'ssss@hogwarts.com',
+'대유잼이다',
+'C:\Users\User\Desktop\JUNGJAEEUN\web\static\wand.png',
+'해그리드',
+'1111',
+'010-0000-0000',
+'호그와트 숲',
+NOW()
+);
